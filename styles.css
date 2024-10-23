@@ -1,0 +1,631 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+}
+
+/* Wrapper */
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(paisajeConMayra.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:transparent; 
+  z-index: 1000; 
+}
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display:block;
+}
+
+.menu a.active {
+  color: #deaf39;
+}
+
+.menu a:hover {
+  background-color: #f1ce76;
+  color: #000000;
+  transition: ease-in .5s;
+}
+
+.main {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5em 1em;
+  margin-top: 4em; 
+  margin-inline: auto;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ffffff;
+}
+
+span {
+  color: #deaf39;
+}
+
+.main p {
+  color: #ffffff;
+  margin: 1.5rem;
+  
+}
+
+.descargar-cv {
+  padding: 10px 20px;
+  background-color: #deaf39;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px -4px;
+ 
+}
+
+.descargar-cv:hover {
+  background-color: #ffffff;
+  box-shadow: none;
+}
+/* Estilo para la barra de navegación cuando está fija */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  background: #393939;
+}
+/* Sobre mí­ */
+.sobreMi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #738478;
+  padding: 3em 1em;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.sobreMi img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 2em;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Sombra para resaltar la imagen */
+  transition: transform 0.3s ease; /* Añadir una animación suave */
+}
+.masInfo {
+  max-width: 900px;
+}
+
+.masInfo h2 {
+  font-size: 2.5em;
+  color: #fafafa;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: rgb(209, 199, 152);
+  margin: 1em auto;
+  margin-bottom: 1.5rem;
+}
+/* Sobre mí 2­ */
+.sobreMi2 {
+  width:100%;
+  height: 100%;
+  padding: 1rem 0 1rem 0;
+  background-color: #738478;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sobreMi2-encabezado {
+  font-size: 1.8rem;
+  color: #deaf39;
+  margin-bottom: 1rem;
+  border-bottom: 0.3rem solid rgb(239, 190, 68);
+  text-shadow: 0.2rem 0.3rem 0.5rem rgb(25, 25, 25);
+}
+.envoltura-barra-progreso {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color:#738478;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.barra-progreso {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.porcentaje-progreso {
+    height: 30px;
+    width: 0%; /* Inicia en 0% */
+    background-color: #edaf39;
+    border-radius: 20px;
+    transition: width 2s ease-in-out;
+}
+.texto-progreso {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* Portfolio */
+.portfolio, .contact-section {
+  width: 100vw;
+  background-color: #738478;
+  color: #fff;
+  padding: 3em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  position: relative;
+}
+
+.portfolio-heading {
+  text-align: center;
+}
+
+.portfolio .container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio .descargar-cv {
+  padding: 10px 20px;
+  background-color: #deaf39;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px -4px;
+  text-decoration: none;
+
+}
+.card {
+  width: 100%;
+  max-width: 250px;
+  background-color: #decc95;
+  margin: 1em;
+  text-align: center;
+  transition: top 0.3s;
+  box-shadow: -0.5rem 1rem 1rem rgb(60, 60, 60);
+}
+
+.card__img {
+  width: 100%;
+  height: 200px;
+  background-image: url(proyectoIdeas.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__title {
+  padding: 1rem;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+
+.card__proyect-links a {
+  color: #070706;
+  text-decoration: none;
+}
+
+.card__proyect-links i {
+  font-size: 1.5em;
+}
+.card .descargar-cv a{
+  text-decoration: none;
+  color: #000000;
+}
+.card .descargar-cv:hover {
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form label {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.container-contact {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.contact-section img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 2em 0;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group .input, .form-group textarea {
+  padding: 10px;
+  margin-bottom: 1em;
+  background: none;
+  border: 1px solid #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #deaf39;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 8px -4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.contact-info {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-box {
+  background-color: #738478;
+  color: #000;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 2em 1em;
+  background-color: #deaf39;
+}
+
+.footer-content h2 {
+  font-size: 2.5em;
+}
+
+.footer-content h5 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  margin-top: 1.5em;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+  color:#deaf39;
+  background-color: #ffffff;
+}
+
+.footer__copy{
+  text-align: center;
+  color: #9d9b9b;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.footer__copy-link {
+  color: #918f8f;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* Botón de WhatsApp flotante */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  cursor: pointer;
+  font-size: 40px; 
+  color: #25D366; 
+}
+
+.chat-icon:hover {
+  color: #000000; 
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 101;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+/* Header del chat */
+.chat-header {
+  background-color: #deaf39;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header h4 {
+  margin: 0;
+  color: rgb(0, 0, 0);
+}
+
+.close-chat-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Contenido del chat */
+.chat-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #000000;
+}
+
+/* Estilo de los botones de opciones en el chat */
+.chat-option-btn {
+  background-color: #deaf39;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+  display: block;
+  width: 100%;  /* Botones ocupan el 100% del ancho */
+}
+
+.chat-option-btn:hover {
+  background-color: #c79e33;
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+input::placeholder, textarea::placeholder {
+  color: white;
+}
+
+.input-box {
+  display: flex;
+  padding: 10px;
+  background-color: #ececec;
+  border-top: 1px solid #ccc;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  outline:none;
+
+}
+
+.input-box button {
+  padding: 10px;
+  background-color: #deaf39;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background-color: #c79e33;
+}
+
+/* Media Queries */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  .navbar {
+      padding: 1em;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.695);
+      position: relative;
+  }
+
+  .menu {
+      width: 100%;
+      justify-content: space-evenly;
+  }
+
+  .main {
+      padding: 2em;
+      margin-top: 6em; 
+  }
+
+  .sobreMi {
+      padding: 2em 1em;
+  }
+
+  .portfolio .container, .container-contact {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .sobreMi img {
+      max-width: 350px;
+  }
+
+  .masInfo h2 {
+      font-size: 2em;
+  }
+}
+
+/* Smartphones large */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      padding: 1em;
+  }
+
+  .menu {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  .main {
+      padding: 2em;
+      margin-top: 6em;
+  }
+
+  .sobreMi {
+      padding: 2em 1em;
+  }
+
+  .portfolio, .contact-section {
+      padding: 2em 1em;
+  }
+
+  h1 {
+      font-size: 2em;
+  }
+
+  .descargar-cv {
+      padding: 8px 15px;
+  }
+
+  .sobreMi img {
+      max-width: 300px;
+  }
+}
+
+/* Smartphones small */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.8em;
+  }
+
+  .descargar-cv {
+      padding: 8px 15px;
+  }
+
+  .menu {
+      flex-direction: column;
+  }
+
+  .footer-content h2 {
+      font-size: 1.8em;
+  }
+
+  .footer-content h5 {
+      font-size: 1em;
+  }
+
+  .sobreMi img {
+      max-width: 250px;
+  }
+
+  .portfolio .card {
+      max-width: 200px;
+  }
+}

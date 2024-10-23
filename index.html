@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Mayra</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+
+<body>
+  <!--Inicio-->
+  <div id="inicio" class="wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <h2>M<span>O</span></h2>
+        </div>
+        <ul class="menu">
+          <li><a class="active" href="#inicio">Inicio</a></li>
+          <li><a href="#SobreMi">Sobre mí</a></li>
+          <li><a href="#portfolio">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="Inicio" class="main">
+      <div class="info-content">
+        <h1>Soy <span class="highlight"> Mayra Ortega</span></h1>
+        <p id="typing-effect">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, sequi velit in adipisci
+          perspiciatis ratione alias nam! Accusantium, officia ab iste quia, blanditiis ex mollitia omnis inventore
+          aspernatur soluta unde!</p>
+        <a href="CV.pdf">
+          <button class="descargar-cv">Descargar CV
+          </button>
+        </a>
+      </div>
+    </main>
+  </div>
+
+  <!--Sobre mí -->
+  <div id="SobreMi" class="sobreMi">
+    <img src="mayra_toby.png" alt="chicaConSuPerro">
+    <div class="masInfo">
+      <h2>Sobre mí</h2>
+      <div class="divider"></div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum quaerat ipsa vitae voluptatibus odit ipsam
+        itaque suscipit facere aperiam voluptate, sed quidem culpa deleniti atque fuga rerum tenetur voluptas quos!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti blanditiis, numquam ullam earum veritatis
+        tempora quo itaque sapiente dolor, incidunt architecto temporibus quia voluptas est consequuntur deserunt atque
+        ipsa vero.
+      </p>
+      <button class="descargar-cv">Leer más</button>
+    </div>
+  </div>
+  <!--Sobre mí 2 -->
+  <div class="sobreMi2">
+    <h3 class="sobreMi2-encabezado">Progreso</h3>
+    <div class="envoltura-barra-progreso">
+
+      <div class="barra-progreso">
+        <div class="porcentaje-progreso" data-porcentaje="95%"></div>
+        <div class="texto-progreso">HTML 95%</div>
+      </div>
+
+      <div class="barra-progreso">
+        <div class="porcentaje-progreso" data-porcentaje="90%"></div>
+        <div class="texto-progreso">CSS 90%</div>
+      </div>
+
+      <div class="barra-progreso">
+        <div class="porcentaje-progreso" data-porcentaje="85%"></div>
+        <div class="texto-progreso">JavaScript 85%</div>
+      </div>
+
+      <div class="barra-progreso">
+        <div class="porcentaje-progreso" data-porcentaje="85%"></div>
+        <div class="texto-progreso">PHP 85%</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--Portafolio -->
+  <div id="portfolio" class="portfolio">
+    <div class="portfolio-heading">
+      <h2>Mi Portafolio</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Juego de adivinanza</h2>
+        </div>
+        <div class="card__proyect-links">
+        </div>
+        <div class="button-content">
+          <a href="https://github.com/Mayra0105/Juego-adivinanza" target="_blank">
+            <button class="proyect-details-button descargar-cv">
+              <i class="fab fa-github"></i>
+              Ver proyecto
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Calculadora básica</h2>
+        </div>
+        <div class="card__proyect-links">
+        </div>
+        <div class="button-content">
+          <a href="https://github.com/Mayra0105/Calculadora" target="_blank">
+            <button class="proyect-details-button descargar-cv">
+              <i class="fab fa-github"></i>
+              Ver proyecto
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Reloj digital futurista</h2>
+        </div>
+        <div class="card__proyect-links">
+        </div>
+        <div class="button-content">
+          <a href="https://github.com/Mayra0105/Calculadora" target="_blank">
+            <button class="proyect-details-button descargar-cv">
+              <i class="fab fa-github"></i>
+              Ver proyecto
+            </button>
+          </a>
+        </div>
+      </div>
+
+
+      <!--Contacto -->
+      <div id="contacto" class="contact-section">
+        <div class="contact-heading">
+          <h2>Contacto</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="container-contact">
+          <!-- Formulario de contacto -->
+          <div class="contact-form">
+            <h4>Contáctame</h4>
+            <form class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Nombre" class="input" required>
+
+              <label for="phone">Teléfono</label>
+              <input type="text" id="phone" name="phone" placeholder="Teléfono" class="input" required>
+
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="Correo electrónico" class="input" required>
+
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="Escribe aquí tu mensaje..." required></textarea>
+
+              <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+          </div>
+
+          <!-- Información de contacto y mapa -->
+          <div class="contact-info">
+            <div class="info-box">
+              <p><strong>Ubicación:</strong> Plaza de España 13, Madrid</p>
+              <p><strong>Teléfono:</strong> +34 902 345 678</p>
+              <p><strong>Email:</strong> mayraortegacervantes1@gmail.com</p>
+            </div>
+            <!-- Mapa de Google Maps con la ubicación de Plaza de España, Madrid -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.824929288352!2d-3.7114321846036965!3d40.42378267936414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287cf44b54a1%3A0x4c527944dddf1ac9!2sPlaza%20de%20Espa%C3%B1a%2C%2013%2C%2028013%20Madrid!5e0!3m2!1ses!2ses!4v1637782012958!5m2!1ses!2ses"
+              width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Mayra Ortega</h2>
+    </div>
+    <div class="sotial-networks">
+      <a href="https://es.linkedin.com/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://x.com/?lang=es" target="_blank">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+    </div>
+
+    <div class="footer__copy">
+      <p id="year" class="footer-text">
+        &copy;<span id="year"></span></p>
+      <p>Copyright &copy Todos los derechos reservados. By
+        <a href="https://github.com/Mayra0105" target="_blank" class="footer__copy-link">Mayra</a>
+      </p>
+    </div>
+  </footer>
+  <!-- Botón flotante de chat -->
+  <div class="chat-icon" id="chatIcon">
+    <i class="fa-brands fa-whatsapp" style="font-size: 40px; color: #25D366;"></i>
+  </div>
+  <!-- Ventana del chat -->
+  <div class="chat-popup" id="chatPopup">
+    <div class="chat-header">
+      <h4>Chat</h4>
+      <button id="closeChat" class="close-chat-btn">&times;</button>
+    </div>
+    <div class="chat-content">
+      <div class="messages" id="chatMessages"></div>
+      <div class="input-box">
+        <input type="text" id="messageInput" placeholder="Escribe un mensaje..." />
+        <button id="sendMessageButton">Enviar</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
